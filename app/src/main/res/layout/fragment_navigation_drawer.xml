@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE"
+    tools:context="com.project.maharjan.ims.NavigationDrawerFragment">
+
+    <RelativeLayout
+        android:id="@+id/nav_drawer_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="210dp"
+            android:layout_marginBottom="16dp"
+
+            android:src="@drawable/ic_pic" />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nav_drawer_linear_layout"
+        android:layout_marginTop="15dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+</RelativeLayout>
